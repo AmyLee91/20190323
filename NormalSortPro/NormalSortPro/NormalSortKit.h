@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)BubbleSort:(NSMutableArray *)array;
 //选择排序
 +(void)selectSort:(NSMutableArray *)array;
+
+//堆排序-
+//大根堆排序
++(void)HeapSort:(NSMutableArray *)array with:(NSInteger)lengthIndex;
 @end
 
 NS_ASSUME_NONNULL_END

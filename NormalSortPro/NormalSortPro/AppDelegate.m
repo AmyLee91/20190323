@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "NormalSortKit.h"
+
 
 @interface AppDelegate ()
 
@@ -19,14 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSMutableArray *arr = [NSMutableArray arrayWithArray:@[@24,@35,@13,@22,@33,@78,@9,@99]];
    
-   
-    [NormalSortKit fastSort:arr low:0 high:7];
-//    [NormalSortKit BubbleSort:arr];
-//    [NormalSortKit selectSort:arr];
-    
-//    NSLog(@"快速排序后的结果：%@",arr);
     return YES;
 }
 

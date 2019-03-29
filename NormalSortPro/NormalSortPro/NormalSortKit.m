@@ -7,6 +7,7 @@
 //
 
 //常见的排序算法
+//默认升序
 
 #import "NormalSortKit.h"
 
@@ -73,7 +74,7 @@
     
     for (int i =0; i<array.count; i++) {
         for (int j =0; j< array.count-1-i; j++) {
-            if (array[j]>array[j+1]) {
+            if ([array[j] intValue]>[array[j+1] intValue]) {
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j+1];
             }
         }
@@ -114,10 +115,45 @@
 
 /******* 堆排序 *******/
 /*
+ 大根堆：就是每个父节点的数据大于子节点中的数据
+ 小根堆：就是每个父节点的数据小于子节点中的数据
+ 
  思路：堆排序是一种树形选择排序，是对直接选择排序的有效改进。
- 
- 
- 
+      每次将未排序数组构建成一个大根堆或者是一个小根堆，得到根节点便是未排序数组中的最大或者是最小值，
+      然后将根节点即数组中第一个数据跟未排序数组中的最后一个元素即进行交换。
+      然后将未排序数组的数量减一，再次构建大根堆或者小根堆。以此类推，直到未排序数组剩下一个元素
  */
+
+
+//大根堆排序
++(void)HeapSort:(NSMutableArray *)array with:(NSInteger)lengthIndex{
+    
+    while (lengthIndex>0) {
+        //构建大根堆
+        [self BuildHeap:array withIndex:lengthIndex];
+        //交换堆中根节点和最后一个节点
+        [array exchangeObjectAtIndex:0 withObjectAtIndex:lengthIndex-1];
+        lengthIndex--;
+    }
+     NSLog(@"堆排序的结果：%@",array);
+}
+
+//构造大根堆
++(void)BuildHeap:(NSMutableArray *)array withIndex:(NSInteger)lengthIndex{
+
+    //循环堆中所以的父节点和它两个子节点进行比较，保证父节点最大值
+    for(int i = (int)lengthIndex/2;i>=0;i--){
+        if ( 2*i+1 < lengthIndex && [array[i] integerValue] < [array[2*i+1] integerValue]) {
+            [array exchangeObjectAtIndex:i withObjectAtIndex:(2*i+1)];
+        }
+        if ( 2*i+2 < lengthIndex && [array[i] integerValue] < [array[2*i+2] integerValue]) {
+            [array exchangeObjectAtIndex:i withObjectAtIndex:(2*i+2)];
+        }
+    }
+    NSLog(@"构造成大根堆：%@",array);
+}
+
+
+
 
 @end
