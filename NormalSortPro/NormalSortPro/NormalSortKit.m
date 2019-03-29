@@ -37,16 +37,14 @@
     
     //开始排序，使得left<prmt 同时right>prmt
     while (i <= j) {
-        //        while ([array[i] intValue] < [prmt intValue]) {
-        //该行与下一行作用相同
-        
-        while ([array[i] compare:prmt] == NSOrderedAscending) {
+        while ([array[i] intValue] < [prmt intValue]) {
+//        //该行与下一行作用相同
+//        while ([array[i] compare:prmt] == NSOrderedAscending) {
             i++;
         }
-        //        while ([array[j] intValue] > [prmt intValue]) {
+         while ([array[j] intValue] > [prmt intValue]) {
         //该行与下一行作用相同
-        
-        while ([array[j] compare:prmt] == NSOrderedDescending) {
+        //while ([array[j] compare:prmt] == NSOrderedDescending) {
             j--;
         }
         

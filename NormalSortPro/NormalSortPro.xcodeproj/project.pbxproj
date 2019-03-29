@@ -16,6 +16,8 @@
 		2C6A7E38224C99F300989E3A /* NormalSortProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E37224C99F300989E3A /* NormalSortProTests.m */; };
 		2C6A7E43224C99F300989E3A /* NormalSortProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E42224C99F300989E3A /* NormalSortProUITests.m */; };
 		2C6A7E53224C9A3300989E3A /* NormalSortKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E52224C9A3300989E3A /* NormalSortKit.m */; };
+		2C6A7E56224DC30900989E3A /* NormalAlgorithmKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E55224DC30900989E3A /* NormalAlgorithmKit.m */; };
+		2C6A7E59224DFFC200989E3A /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E58224DFFC200989E3A /* ListNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		2C6A7E44224C99F300989E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6A7E51224C9A3300989E3A /* NormalSortKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSortKit.h; sourceTree = "<group>"; };
 		2C6A7E52224C9A3300989E3A /* NormalSortKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSortKit.m; sourceTree = "<group>"; };
+		2C6A7E54224DC30900989E3A /* NormalAlgorithmKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalAlgorithmKit.h; sourceTree = "<group>"; };
+		2C6A7E55224DC30900989E3A /* NormalAlgorithmKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalAlgorithmKit.m; sourceTree = "<group>"; };
+		2C6A7E57224DFFC200989E3A /* ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		2C6A7E58224DFFC200989E3A /* ListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				2C6A7E2D224C99F200989E3A /* main.m */,
 				2C6A7E51224C9A3300989E3A /* NormalSortKit.h */,
 				2C6A7E52224C9A3300989E3A /* NormalSortKit.m */,
+				2C6A7E54224DC30900989E3A /* NormalAlgorithmKit.h */,
+				2C6A7E55224DC30900989E3A /* NormalAlgorithmKit.m */,
+				2C6A7E57224DFFC200989E3A /* ListNode.h */,
+				2C6A7E58224DFFC200989E3A /* ListNode.m */,
 			);
 			path = NormalSortPro;
 			sourceTree = "<group>";
@@ -268,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6A7E23224C99F000989E3A /* ViewController.m in Sources */,
+				2C6A7E59224DFFC200989E3A /* ListNode.m in Sources */,
 				2C6A7E2E224C99F200989E3A /* main.m in Sources */,
 				2C6A7E20224C99F000989E3A /* AppDelegate.m in Sources */,
+				2C6A7E56224DC30900989E3A /* NormalAlgorithmKit.m in Sources */,
 				2C6A7E53224C9A3300989E3A /* NormalSortKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
