@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C94A95322545AFC0049EE63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95222545AFC0049EE63 /* AppDelegate.m */; };
+		2C94A95622545AFC0049EE63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95522545AFC0049EE63 /* ViewController.m */; };
+		2C94A95C22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95A22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld */; };
+		2C94A95E22545AFE0049EE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A95D22545AFE0049EE63 /* Assets.xcassets */; };
+		2C94A96122545AFE0049EE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A95F22545AFE0049EE63 /* LaunchScreen.storyboard */; };
+		2C94A96422545AFE0049EE63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A96322545AFE0049EE63 /* main.m */; };
+		2C94A96E22545AFF0049EE63 /* PS_AutomicLightingProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A96D22545AFF0049EE63 /* PS_AutomicLightingProTests.m */; };
+		2C94A97922545AFF0049EE63 /* PS_AutomicLightingProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A97822545AFF0049EE63 /* PS_AutomicLightingProUITests.m */; };
+		2C94A99222545CAF0049EE63 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A99122545CAF0049EE63 /* BaseViewController.m */; };
+		2C94A99522545CC90049EE63 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A99422545CC90049EE63 /* BaseView.m */; };
+		2C94A99822545CE20049EE63 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A99722545CE20049EE63 /* BaseTableViewCell.m */; };
+		2C94A99B22545D210049EE63 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A99A22545D210049EE63 /* BaseNavigationController.m */; };
+		2C94A9A122545D710049EE63 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9A022545D710049EE63 /* BaseWebViewController.m */; };
+		2C94A9A422545E340049EE63 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9A322545E340049EE63 /* MainTabbarController.m */; };
+		2C94A9AA22548E070049EE63 /* UIColor+Kits.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9A922548E070049EE63 /* UIColor+Kits.m */; };
+		2C94A9B2225498570049EE63 /* BaseWKWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9B1225498570049EE63 /* BaseWKWebview.m */; };
+		2C94A9B522549C5D0049EE63 /* PS_HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9B422549C5D0049EE63 /* PS_HomePageViewController.m */; };
+		2C94A9B92254A49A0049EE63 /* UIImage+WQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9B72254A49A0049EE63 /* UIImage+WQ.m */; };
+		2C94A9C82254AEC90049EE63 /* icon_tabbar_device_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9BC2254AEC90049EE63 /* icon_tabbar_device_selected@2x.png */; };
+		2C94A9C92254AEC90049EE63 /* icon_tabbar_device_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9BD2254AEC90049EE63 /* icon_tabbar_device_selected@3x.png */; };
+		2C94A9CA2254AEC90049EE63 /* icon_tabbar_device@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9BE2254AEC90049EE63 /* icon_tabbar_device@3x.png */; };
+		2C94A9CB2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9BF2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png */; };
+		2C94A9CC2254AEC90049EE63 /* icon_tabbar_homepage_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C02254AEC90049EE63 /* icon_tabbar_homepage_selected@2x.png */; };
+		2C94A9CD2254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C12254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png */; };
+		2C94A9CE2254AEC90049EE63 /* icon_tabbar_device@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C22254AEC90049EE63 /* icon_tabbar_device@2x.png */; };
+		2C94A9CF2254AEC90049EE63 /* icon_tabbar_homepage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C32254AEC90049EE63 /* icon_tabbar_homepage@2x.png */; };
+		2C94A9D02254AEC90049EE63 /* icon_tabbar_homepage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C42254AEC90049EE63 /* icon_tabbar_homepage@3x.png */; };
+		2C94A9D12254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C52254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png */; };
+		2C94A9D22254AEC90049EE63 /* icon_tabbar_mine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C62254AEC90049EE63 /* icon_tabbar_mine@2x.png */; };
+		2C94A9D32254AEC90049EE63 /* icon_tabbar_mine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C72254AEC90049EE63 /* icon_tabbar_mine@3x.png */; };
+		2C94A9D82254B3630049EE63 /* PS_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9D52254B3630049EE63 /* PS_TabBar.m */; };
+		2C94A9D92254B3630049EE63 /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9D72254B3630049EE63 /* UITabBar+CustomBadge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C94A96A22545AFF0049EE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C94A94622545AFC0049EE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C94A94D22545AFC0049EE63;
+			remoteInfo = PS_AutomicLightingPro;
+		};
+		2C94A97522545AFF0049EE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C94A94622545AFC0049EE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C94A94D22545AFC0049EE63;
+			remoteInfo = PS_AutomicLightingPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C94A94E22545AFC0049EE63 /* PS_AutomicLightingPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PS_AutomicLightingPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C94A95122545AFC0049EE63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C94A95222545AFC0049EE63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C94A95422545AFC0049EE63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C94A95522545AFC0049EE63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C94A95B22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PS_AutomicLightingPro.xcdatamodel; sourceTree = "<group>"; };
+		2C94A95D22545AFE0049EE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C94A96022545AFE0049EE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C94A96222545AFE0049EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C94A96322545AFE0049EE63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C94A96922545AFF0049EE63 /* PS_AutomicLightingProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PS_AutomicLightingProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C94A96D22545AFF0049EE63 /* PS_AutomicLightingProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PS_AutomicLightingProTests.m; sourceTree = "<group>"; };
+		2C94A96F22545AFF0049EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C94A97422545AFF0049EE63 /* PS_AutomicLightingProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PS_AutomicLightingProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C94A97822545AFF0049EE63 /* PS_AutomicLightingProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PS_AutomicLightingProUITests.m; sourceTree = "<group>"; };
+		2C94A97A22545AFF0049EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C94A99022545CAF0049EE63 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2C94A99122545CAF0049EE63 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2C94A99322545CC90049EE63 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		2C94A99422545CC90049EE63 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		2C94A99622545CE20049EE63 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		2C94A99722545CE20049EE63 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		2C94A99922545D210049EE63 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		2C94A99A22545D210049EE63 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		2C94A99F22545D710049EE63 /* BaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		2C94A9A022545D710049EE63 /* BaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		2C94A9A222545E340049EE63 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
+		2C94A9A322545E340049EE63 /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
+		2C94A9A822548E070049EE63 /* UIColor+Kits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Kits.h"; sourceTree = "<group>"; };
+		2C94A9A922548E070049EE63 /* UIColor+Kits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Kits.m"; sourceTree = "<group>"; };
+		2C94A9AB22548EE40049EE63 /* FontAndColorMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacroHeader.h; sourceTree = "<group>"; };
+		2C94A9AC225491190049EE63 /* Global_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global_header.h; sourceTree = "<group>"; };
+		2C94A9AF225494650049EE63 /* UtilityMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilityMacro.h; sourceTree = "<group>"; };
+		2C94A9B0225498570049EE63 /* BaseWKWebview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWKWebview.h; sourceTree = "<group>"; };
+		2C94A9B1225498570049EE63 /* BaseWKWebview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWKWebview.m; sourceTree = "<group>"; };
+		2C94A9B322549C5D0049EE63 /* PS_HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PS_HomePageViewController.h; sourceTree = "<group>"; };
+		2C94A9B422549C5D0049EE63 /* PS_HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PS_HomePageViewController.m; sourceTree = "<group>"; };
+		2C94A9B72254A49A0049EE63 /* UIImage+WQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WQ.m"; sourceTree = "<group>"; };
+		2C94A9B82254A49A0049EE63 /* UIImage+WQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WQ.h"; sourceTree = "<group>"; };
+		2C94A9BC2254AEC90049EE63 /* icon_tabbar_device_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_device_selected@2x.png"; sourceTree = "<group>"; };
+		2C94A9BD2254AEC90049EE63 /* icon_tabbar_device_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_device_selected@3x.png"; sourceTree = "<group>"; };
+		2C94A9BE2254AEC90049EE63 /* icon_tabbar_device@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_device@3x.png"; sourceTree = "<group>"; };
+		2C94A9BF2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine_selected@3x.png"; sourceTree = "<group>"; };
+		2C94A9C02254AEC90049EE63 /* icon_tabbar_homepage_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_homepage_selected@2x.png"; sourceTree = "<group>"; };
+		2C94A9C12254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_homepage_selected@3x.png"; sourceTree = "<group>"; };
+		2C94A9C22254AEC90049EE63 /* icon_tabbar_device@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_device@2x.png"; sourceTree = "<group>"; };
+		2C94A9C32254AEC90049EE63 /* icon_tabbar_homepage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_homepage@2x.png"; sourceTree = "<group>"; };
+		2C94A9C42254AEC90049EE63 /* icon_tabbar_homepage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_homepage@3x.png"; sourceTree = "<group>"; };
+		2C94A9C52254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine_selected@2x.png"; sourceTree = "<group>"; };
+		2C94A9C62254AEC90049EE63 /* icon_tabbar_mine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine@2x.png"; sourceTree = "<group>"; };
+		2C94A9C72254AEC90049EE63 /* icon_tabbar_mine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine@3x.png"; sourceTree = "<group>"; };
+		2C94A9D42254B3630049EE63 /* PS_TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PS_TabBar.h; sourceTree = "<group>"; };
+		2C94A9D52254B3630049EE63 /* PS_TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PS_TabBar.m; sourceTree = "<group>"; };
+		2C94A9D62254B3630049EE63 /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
+		2C94A9D72254B3630049EE63 /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C94A94B22545AFC0049EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A96622545AFF0049EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A97122545AFF0049EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C94A94522545AFC0049EE63 = {
+			isa = PBXGroup;
+			children = (
+				2C94A95022545AFC0049EE63 /* PS_AutomicLightingPro */,
+				2C94A96C22545AFF0049EE63 /* PS_AutomicLightingProTests */,
+				2C94A97722545AFF0049EE63 /* PS_AutomicLightingProUITests */,
+				2C94A94F22545AFC0049EE63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C94A94F22545AFC0049EE63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A94E22545AFC0049EE63 /* PS_AutomicLightingPro.app */,
+				2C94A96922545AFF0049EE63 /* PS_AutomicLightingProTests.xctest */,
+				2C94A97422545AFF0049EE63 /* PS_AutomicLightingProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C94A95022545AFC0049EE63 /* PS_AutomicLightingPro */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A98822545B5C0049EE63 /* apps */,
+				2C94A98722545B440049EE63 /* Utils */,
+				2C94A98622545B0C0049EE63 /* ThirdParty */,
+				2C94A95122545AFC0049EE63 /* AppDelegate.h */,
+				2C94A95222545AFC0049EE63 /* AppDelegate.m */,
+				2C94A95422545AFC0049EE63 /* ViewController.h */,
+				2C94A95522545AFC0049EE63 /* ViewController.m */,
+				2C94A95D22545AFE0049EE63 /* Assets.xcassets */,
+				2C94A95F22545AFE0049EE63 /* LaunchScreen.storyboard */,
+				2C94A96222545AFE0049EE63 /* Info.plist */,
+				2C94A96322545AFE0049EE63 /* main.m */,
+				2C94A95A22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld */,
+			);
+			path = PS_AutomicLightingPro;
+			sourceTree = "<group>";
+		};
+		2C94A96C22545AFF0049EE63 /* PS_AutomicLightingProTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A96D22545AFF0049EE63 /* PS_AutomicLightingProTests.m */,
+				2C94A96F22545AFF0049EE63 /* Info.plist */,
+			);
+			path = PS_AutomicLightingProTests;
+			sourceTree = "<group>";
+		};
+		2C94A97722545AFF0049EE63 /* PS_AutomicLightingProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A97822545AFF0049EE63 /* PS_AutomicLightingProUITests.m */,
+				2C94A97A22545AFF0049EE63 /* Info.plist */,
+			);
+			path = PS_AutomicLightingProUITests;
+			sourceTree = "<group>";
+		};
+		2C94A98622545B0C0049EE63 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		2C94A98722545B440049EE63 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9B62254A1070049EE63 /* category */,
+				2C94A9AF225494650049EE63 /* UtilityMacro.h */,
+				2C94A9AB22548EE40049EE63 /* FontAndColorMacroHeader.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2C94A98822545B5C0049EE63 /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A98F22545C820049EE63 /* Global */,
+				2C94A98E22545C760049EE63 /* Base */,
+				2C94A98A22545B980049EE63 /* projectFiles */,
+				2C94A98922545B900049EE63 /* commons */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+		2C94A98922545B900049EE63 /* commons */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A98B22545BF90049EE63 /* modules */,
+			);
+			path = commons;
+			sourceTree = "<group>";
+		};
+		2C94A98A22545B980049EE63 /* projectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9BA2254AC300049EE63 /* Res */,
+				2C94A98D22545C190049EE63 /* mineVtcs */,
+				2C94A98C22545C050049EE63 /* homeVtcs */,
+			);
+			path = projectFiles;
+			sourceTree = "<group>";
+		};
+		2C94A98B22545BF90049EE63 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		2C94A98C22545C050049EE63 /* homeVtcs */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9B322549C5D0049EE63 /* PS_HomePageViewController.h */,
+				2C94A9B422549C5D0049EE63 /* PS_HomePageViewController.m */,
+			);
+			path = homeVtcs;
+			sourceTree = "<group>";
+		};
+		2C94A98D22545C190049EE63 /* mineVtcs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mineVtcs;
+			sourceTree = "<group>";
+		};
+		2C94A98E22545C760049EE63 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9AE225492180049EE63 /* tabbar */,
+				2C94A99022545CAF0049EE63 /* BaseViewController.h */,
+				2C94A99122545CAF0049EE63 /* BaseViewController.m */,
+				2C94A99322545CC90049EE63 /* BaseView.h */,
+				2C94A99422545CC90049EE63 /* BaseView.m */,
+				2C94A99622545CE20049EE63 /* BaseTableViewCell.h */,
+				2C94A99722545CE20049EE63 /* BaseTableViewCell.m */,
+				2C94A99922545D210049EE63 /* BaseNavigationController.h */,
+				2C94A99A22545D210049EE63 /* BaseNavigationController.m */,
+				2C94A99F22545D710049EE63 /* BaseWebViewController.h */,
+				2C94A9A022545D710049EE63 /* BaseWebViewController.m */,
+				2C94A9A222545E340049EE63 /* MainTabbarController.h */,
+				2C94A9A322545E340049EE63 /* MainTabbarController.m */,
+				2C94A9B0225498570049EE63 /* BaseWKWebview.h */,
+				2C94A9B1225498570049EE63 /* BaseWKWebview.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2C94A98F22545C820049EE63 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9AC225491190049EE63 /* Global_header.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		2C94A9AE225492180049EE63 /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9D42254B3630049EE63 /* PS_TabBar.h */,
+				2C94A9D52254B3630049EE63 /* PS_TabBar.m */,
+				2C94A9D62254B3630049EE63 /* UITabBar+CustomBadge.h */,
+				2C94A9D72254B3630049EE63 /* UITabBar+CustomBadge.m */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		2C94A9B62254A1070049EE63 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9B82254A49A0049EE63 /* UIImage+WQ.h */,
+				2C94A9B72254A49A0049EE63 /* UIImage+WQ.m */,
+				2C94A9A822548E070049EE63 /* UIColor+Kits.h */,
+				2C94A9A922548E070049EE63 /* UIColor+Kits.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		2C94A9BA2254AC300049EE63 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9BB2254AEA40049EE63 /* tabBars */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		2C94A9BB2254AEA40049EE63 /* tabBars */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9BC2254AEC90049EE63 /* icon_tabbar_device_selected@2x.png */,
+				2C94A9BD2254AEC90049EE63 /* icon_tabbar_device_selected@3x.png */,
+				2C94A9C22254AEC90049EE63 /* icon_tabbar_device@2x.png */,
+				2C94A9BE2254AEC90049EE63 /* icon_tabbar_device@3x.png */,
+				2C94A9C02254AEC90049EE63 /* icon_tabbar_homepage_selected@2x.png */,
+				2C94A9C12254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png */,
+				2C94A9C32254AEC90049EE63 /* icon_tabbar_homepage@2x.png */,
+				2C94A9C42254AEC90049EE63 /* icon_tabbar_homepage@3x.png */,
+				2C94A9C52254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png */,
+				2C94A9BF2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png */,
+				2C94A9C62254AEC90049EE63 /* icon_tabbar_mine@2x.png */,
+				2C94A9C72254AEC90049EE63 /* icon_tabbar_mine@3x.png */,
+			);
+			path = tabBars;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C94A94D22545AFC0049EE63 /* PS_AutomicLightingPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C94A97D22545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingPro" */;
+			buildPhases = (
+				2C94A94A22545AFC0049EE63 /* Sources */,
+				2C94A94B22545AFC0049EE63 /* Frameworks */,
+				2C94A94C22545AFC0049EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PS_AutomicLightingPro;
+			productName = PS_AutomicLightingPro;
+			productReference = 2C94A94E22545AFC0049EE63 /* PS_AutomicLightingPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C94A96822545AFF0049EE63 /* PS_AutomicLightingProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C94A98022545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingProTests" */;
+			buildPhases = (
+				2C94A96522545AFF0049EE63 /* Sources */,
+				2C94A96622545AFF0049EE63 /* Frameworks */,
+				2C94A96722545AFF0049EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C94A96B22545AFF0049EE63 /* PBXTargetDependency */,
+			);
+			name = PS_AutomicLightingProTests;
+			productName = PS_AutomicLightingProTests;
+			productReference = 2C94A96922545AFF0049EE63 /* PS_AutomicLightingProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C94A97322545AFF0049EE63 /* PS_AutomicLightingProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C94A98322545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingProUITests" */;
+			buildPhases = (
+				2C94A97022545AFF0049EE63 /* Sources */,
+				2C94A97122545AFF0049EE63 /* Frameworks */,
+				2C94A97222545AFF0049EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C94A97622545AFF0049EE63 /* PBXTargetDependency */,
+			);
+			name = PS_AutomicLightingProUITests;
+			productName = PS_AutomicLightingProUITests;
+			productReference = 2C94A97422545AFF0049EE63 /* PS_AutomicLightingProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C94A94622545AFC0049EE63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = psiot;
+				TargetAttributes = {
+					2C94A94D22545AFC0049EE63 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2C94A96822545AFF0049EE63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C94A94D22545AFC0049EE63;
+					};
+					2C94A97322545AFF0049EE63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C94A94D22545AFC0049EE63;
+					};
+				};
+			};
+			buildConfigurationList = 2C94A94922545AFC0049EE63 /* Build configuration list for PBXProject "PS_AutomicLightingPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C94A94522545AFC0049EE63;
+			productRefGroup = 2C94A94F22545AFC0049EE63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C94A94D22545AFC0049EE63 /* PS_AutomicLightingPro */,
+				2C94A96822545AFF0049EE63 /* PS_AutomicLightingProTests */,
+				2C94A97322545AFF0049EE63 /* PS_AutomicLightingProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C94A94C22545AFC0049EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C94A9C82254AEC90049EE63 /* icon_tabbar_device_selected@2x.png in Resources */,
+				2C94A96122545AFE0049EE63 /* LaunchScreen.storyboard in Resources */,
+				2C94A9CC2254AEC90049EE63 /* icon_tabbar_homepage_selected@2x.png in Resources */,
+				2C94A9D02254AEC90049EE63 /* icon_tabbar_homepage@3x.png in Resources */,
+				2C94A9CD2254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png in Resources */,
+				2C94A9D22254AEC90049EE63 /* icon_tabbar_mine@2x.png in Resources */,
+				2C94A9CE2254AEC90049EE63 /* icon_tabbar_device@2x.png in Resources */,
+				2C94A9CF2254AEC90049EE63 /* icon_tabbar_homepage@2x.png in Resources */,
+				2C94A95E22545AFE0049EE63 /* Assets.xcassets in Resources */,
+				2C94A9D32254AEC90049EE63 /* icon_tabbar_mine@3x.png in Resources */,
+				2C94A9C92254AEC90049EE63 /* icon_tabbar_device_selected@3x.png in Resources */,
+				2C94A9CB2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png in Resources */,
+				2C94A9D12254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png in Resources */,
+				2C94A9CA2254AEC90049EE63 /* icon_tabbar_device@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A96722545AFF0049EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A97222545AFF0049EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C94A94A22545AFC0049EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C94A95C22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld in Sources */,
+				2C94A99222545CAF0049EE63 /* BaseViewController.m in Sources */,
+				2C94A95622545AFC0049EE63 /* ViewController.m in Sources */,
+				2C94A9B2225498570049EE63 /* BaseWKWebview.m in Sources */,
+				2C94A9D92254B3630049EE63 /* UITabBar+CustomBadge.m in Sources */,
+				2C94A96422545AFE0049EE63 /* main.m in Sources */,
+				2C94A99B22545D210049EE63 /* BaseNavigationController.m in Sources */,
+				2C94A95322545AFC0049EE63 /* AppDelegate.m in Sources */,
+				2C94A9AA22548E070049EE63 /* UIColor+Kits.m in Sources */,
+				2C94A99822545CE20049EE63 /* BaseTableViewCell.m in Sources */,
+				2C94A9A122545D710049EE63 /* BaseWebViewController.m in Sources */,
+				2C94A9A422545E340049EE63 /* MainTabbarController.m in Sources */,
+				2C94A99522545CC90049EE63 /* BaseView.m in Sources */,
+				2C94A9D82254B3630049EE63 /* PS_TabBar.m in Sources */,
+				2C94A9B522549C5D0049EE63 /* PS_HomePageViewController.m in Sources */,
+				2C94A9B92254A49A0049EE63 /* UIImage+WQ.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A96522545AFF0049EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C94A96E22545AFF0049EE63 /* PS_AutomicLightingProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94A97022545AFF0049EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C94A97922545AFF0049EE63 /* PS_AutomicLightingProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C94A96B22545AFF0049EE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C94A94D22545AFC0049EE63 /* PS_AutomicLightingPro */;
+			targetProxy = 2C94A96A22545AFF0049EE63 /* PBXContainerItemProxy */;
+		};
+		2C94A97622545AFF0049EE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C94A94D22545AFC0049EE63 /* PS_AutomicLightingPro */;
+			targetProxy = 2C94A97522545AFF0049EE63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C94A95F22545AFE0049EE63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C94A96022545AFE0049EE63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C94A97B22545AFF0049EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C94A97C22545AFF0049EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C94A97E22545AFF0049EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingPro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C94A97F22545AFF0049EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingPro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2C94A98122545AFF0049EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingProTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PS_AutomicLightingPro.app/PS_AutomicLightingPro";
+			};
+			name = Debug;
+		};
+		2C94A98222545AFF0049EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingProTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PS_AutomicLightingPro.app/PS_AutomicLightingPro";
+			};
+			name = Release;
+		};
+		2C94A98422545AFF0049EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingProUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PS_AutomicLightingPro;
+			};
+			name = Debug;
+		};
+		2C94A98522545AFF0049EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U58RD5NALK;
+				INFOPLIST_FILE = PS_AutomicLightingProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "www.psiot.com.AutomicLighting.PS-AutomicLightingProUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PS_AutomicLightingPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C94A94922545AFC0049EE63 /* Build configuration list for PBXProject "PS_AutomicLightingPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C94A97B22545AFF0049EE63 /* Debug */,
+				2C94A97C22545AFF0049EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C94A97D22545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C94A97E22545AFF0049EE63 /* Debug */,
+				2C94A97F22545AFF0049EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C94A98022545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C94A98122545AFF0049EE63 /* Debug */,
+				2C94A98222545AFF0049EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C94A98322545AFF0049EE63 /* Build configuration list for PBXNativeTarget "PS_AutomicLightingProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C94A98422545AFF0049EE63 /* Debug */,
+				2C94A98522545AFF0049EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C94A95A22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C94A95B22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodel */,
+			);
+			currentVersion = 2C94A95B22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodel */;
+			path = PS_AutomicLightingPro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C94A94622545AFC0049EE63 /* Project object */;
+}
