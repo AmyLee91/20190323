@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Global_header.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseView : UIView

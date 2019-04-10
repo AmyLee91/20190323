@@ -10,7 +10,6 @@
 
 @implementation PS_TabBar
 
-
 - (void) safeAreaInsetsDidChange
 {
     [super safeAreaInsetsDidChange];

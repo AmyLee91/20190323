@@ -11,17 +11,29 @@
 
 
 #import "UtilityMacro.h"
-
-
-/********** 字体、颜色***********/
-#import "UIColor+Kits.h"
 #import "FontAndColorMacroHeader.h"
+#import "AdditionHeader.h"
+
+#import "GlobalDef.h"
+#import "GlobalKey.h"
+#import "GlobalDevice.h"
+#import "GlobalFunctions.h"
 
 
-/************* 分类方法 *************/
-#import "UIImage+WQ.h"
-#import "UIView+YYAdd.h"
-#import "NSArray+Safe.h"
+
+//thirdparty
+
+
+//第三方pod
+#import <AFNetworking/AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
+
 
 
 

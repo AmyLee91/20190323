@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "-panGestureRecognizer"
+            landmarkName = "-tabBarController:shouldSelectViewController:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

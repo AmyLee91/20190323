@@ -24,12 +24,11 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
 }
-
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [[UIApplication sharedApplication].keyWindow endEditing:YES];
-    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,7 +52,7 @@
     
 }
 -(void)test{
-    BaseViewController *vc = [[BaseViewController alloc]init];
+    UIViewController *vc = [[UIViewController alloc]init];
     vc.view.backgroundColor = CRandomColor;
     [self.navigationController pushViewController:vc animated:YES];
     
@@ -186,6 +185,75 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     //    NSLog(@"click view");
+}
+/**
+ *  懒加载UITableView
+ *
+ *  @return UITableView
+ */
+- (UITableView *)tableView
+{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,UIScreen.mainScreen.bounds.size.width , UIScreen.mainScreen.bounds.size.height) style:UITableViewStyleGrouped];
+        _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        _tableView.estimatedRowHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.estimatedSectionFooterHeight = 0;
+        
+        
+        //头部刷新
+        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+        header.automaticallyChangeAlpha = YES;
+        header.lastUpdatedTimeLabel.hidden = YES;
+        _tableView.mj_header = header;
+        
+        //底部刷新
+        _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+        _tableView.backgroundColor=[UIColor whiteColor];
+        
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+
+#pragma mark -- 无数据
+-(void)ShowEmptyViewWith:(UIView *)obj{
+    if ([obj viewWithTag:101010]) {
+        UIView *subview = [obj viewWithTag:101010];
+        [subview removeAllSubviews];
+        [subview removeFromSuperview];
+    }
+    _emptyView = [[UIView alloc]init];
+    UIImageView *img = [[UIImageView alloc]initWithImage:UIImageNamed(@"nothing")];
+    UILabel *label = [[UILabel alloc]init];
+    label.font = UIFontSystem(14);
+    label.textColor = CFontColor1;
+    label.textAlignment =NSTextAlignmentCenter;
+    label.text = LOCALIZATION(@"暂时没有内容哦");///@"暂时没有内容哦" ;
+    _emptyView.tag = 101010;
+    [_emptyView addSubview:img];
+    [_emptyView addSubview:label];
+    
+    [_emptyView setFrame:CGRectMake(0, 0,obj.frame.size.width, obj.frame.size.height)];
+    [obj addSubview:_emptyView];
+    
+    
+    [img setFrame:CGRectMake((Screen_width-179)/2, (_emptyView.height-110)/2-Nav_height-24-16, 179, 110)];
+    [label setFrame:CGRectMake(KNormalSpace,img.bottom+16, Screen_width-KNormalSpace*2, 24)];
+    
+    
+    
+    _emptyView.userInteractionEnabled = NO;
+    img.userInteractionEnabled = NO;
+    
+    
+}
+-(void)removeEmptyView{
+    if (_emptyView) {
+        [_emptyView removeAllSubviews];
+        [_emptyView removeFromSuperview];
+        _emptyView = nil;
+    }
 }
 
 -(void)dealloc{

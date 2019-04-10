@@ -8,7 +8,9 @@
 
 #ifndef UtilityMacro_h
 #define UtilityMacro_h
+#import "FontAndColorMacroHeader.h"
 
+#define LOCALIZATION(text)  [NSString stringWithFormat:@"%@",NSLocalizedString(text, @"")]
 
 //屏幕
 #define Screen_height   [[UIScreen mainScreen] bounds].size.height
@@ -17,6 +19,13 @@
 #define StatusBar_height ([[UIScreen mainScreen] bounds].size.height > 811 ? 44 :20)
 #define Nav_height  (44+StatusBar_height)
 
+#define NormalView_height  (Screen_height-Nav_height)
+#define TabView_height   (NormalView_height - Tabbar_height)
+
+//默认间距
+#define KNormalSpace 16.0f
+
+#define KNormalCellHeight 56.f
 
 //系统
 #define kAppDelegate [AppDelegate sharedAppDelegate]

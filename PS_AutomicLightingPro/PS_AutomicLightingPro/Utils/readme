@@ -1,0 +1,64 @@
+ThirdParty 目录下：
+
+JDFTooltips：点击出现气泡提示款
+shareDSK ：第三方的微信、qq SDK
+photoBrowser： 相册、图片选择、浏览、上传
+SDPhotoBrowser：图片浏览器
+WJTouchID： Touch ID 验证
+WSCoachMarksView ： 引导图、指示
+WQCategory：基础类的分类：吐丝提示框、UITableView的分割线居左
+
+
+Utils：工具类方法
+1、常用类的分类
+NSDate+convenience  ： 根据年、月、日获取时间NSDate数据
+UIImage+WQ： 创建纯色图片、图片等比缩放到指定尺寸、图片旋转
+NSString+Size：根据字体 计算 label 的高度 或 宽度
+NSString+Emoji ：字符校验：判断是否包含 表情符、是否只包含数组和字母
+NSString+Helper ：md5 ,将字符串md5 加密
+NSMutableDictionary+AddOn： 字典设置空值处理、拷贝字典
+NSArray+safe： 数组越界处理
+UIView+Constraint：删除约束外部、内部
+UIViewAdditions：视图坐标、根据类名寻找子视图
+UIColor+addition：颜色色值设置简写rgb
+NSObject+BeeNotification：通知常用方法的简写：添加注册、处理、移除、发送
+NSUserDefaults+MJSaveCustomObject：将存储的对象序列化后进行存储
+UICustomLineLabel ：带线的label
+TTTAttributedLabel：可以点击跳转的URL 、phone、地址等富文本label
+WQFlatButton.h：设置圆角、颜色、背景色 按钮
+DSAlertView.h： 提示框、文本+按钮
+TouchTableView：列表 点击方法处理
+UIViewController+CWPopup.h：蒙版框、玻璃效果
+UtilityFunction：获取Document、caches、support、文件夹名获取路径、uuid、从json文件获取数据
+UtilityMacro：常用的宏：屏幕、宽高、字体、系统、色值、非空、强弱引用、圆角、版本。。。
+UtilityAdditions：常用数据类型分类：数据类型判断（是否是字典、数组、字符串等等）、字符串非空以及序列化、NSUserDefaults 保存实时同步
+JSONKit/JSONKit.h：解析json数据，转OC类型数据
+ISRDataHelper：科大讯飞（解析json 数据转换成语法）
+XYTransition:  页面翻页调转时的转场动画（配合navigation）
+OpenUUID+Base ：设备唯一标识-------可替换FCUUID
+RSA：非对称加密（从服务端获取公钥 对登录信息进行加密、密闻发送）
+
+
+CocoaPods 文件
+pod 'MJRefresh'：列表刷新、刷新控件样式
+pod 'AFNetworking'：网络请求封装框架
+
+pod 'YYKit'：庞大、功能丰富的 iOS 组件。
+YYModel — 高性能的 iOS JSON 模型框架。
+YYCache — 高性能的 iOS 缓存框架。
+YYImage — 功能强大的 iOS 图像框架。
+YYWebImage — 高性能的 iOS 异步图像加载框架。
+YYText — 功能强大的 iOS 富文本框架。
+YYKeyboardManager — iOS 键盘监听管理工具。
+YYDispatchQueuePool — iOS 全局并发队列管理工具。
+YYAsyncLayer — iOS 异步绘制与显示的工具。
+YYCategories — 功能丰富的 Category 类型工具库。
+
+pod 'MBProgressHUD'：loading 框
+pod 'Masonry'：自动布局框架（添加约束、更新约束）
+pod 'SDWebImage'：网络图片加载框架（有缓存机制）
+pod 'MJExtension'：字典转模型
+pod 'JPush','3.0.2'：极光推送sdk
+pod 'IQKeyboardManager'：键盘处理神器
+pod 'MagicalRecord'：关于Core Data存储的框架。（消息存储、搜索关键字存储）
+

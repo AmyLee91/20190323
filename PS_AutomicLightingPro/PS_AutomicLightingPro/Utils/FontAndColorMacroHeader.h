@@ -17,7 +17,7 @@
 
 #define KWhiteColor [UIColor whiteColor]
 #define KBlackColor [UIColor blackColor]
-
+#define KClearColor [UIColor clearColor]
 //主题色 导航栏颜色
 #define CNavBgColor  [UIColor colorWithHexString:@"ffffff"]  //(255,255,255)
 
@@ -32,6 +32,9 @@
 
 //主蓝色
 #define MainBlueColor [UIColor colorWithHexString:@"347AFC"]  //(52，122，252)
+
+#define CMainTitleColor [UIColor colorWithHexString:@"393D49"] //57.61.73
+
 //登录按钮蓝色色
 #define BuleColor1 [UIColor colorWithHexString:@"25E3EF"]  //(37，227，239)
 

@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
+
+@property(nonatomic,strong)UIView *emptyView;
+
+@property (nonatomic, strong) UITableView * tableView;
+
 /**
  *  修改状态栏颜色
  */

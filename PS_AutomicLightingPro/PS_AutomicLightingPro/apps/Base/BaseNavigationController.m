@@ -37,26 +37,18 @@
     self.interactivePopGestureRecognizer.delegate = self;
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-//    NSLog(@"当前控制器vcs：%lu",(unsigned long)self.viewControllers.count);
-    
+    NSLog(@"当前控制器vcs：%lu",(unsigned long)self.viewControllers.count);
     if (self.viewControllers.count>0) {
         viewController.hidesBottomBarWhenPushed = YES;
-       
-        //系统OS12.1 UINavigationController + UITabBarController（ UITabBar 磨砂），在popViewControllerAnimated 会遇到tabbar布局错乱的问题：
-//        [UITabBar appearance].translucent = NO;
-        
-        //设置返回键
         if( [viewController isKindOfClass:[BaseViewController class]]){
             [(BaseViewController*)viewController setIsShowLiftBack:YES];
         }
     }
-    
     [super pushViewController:viewController animated:animated];
-    
     // 修改tabBra的frame--偏移问题
-//    CGRect frame = self.tabBarController.tabBar.frame;
-//    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
-//    self.tabBarController.tabBar.frame = frame;
+    CGRect frame = self.tabBarController.tabBar.frame;
+    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
+    self.tabBarController.tabBar.frame = frame;
     
 }
 #pragma mark --UINavigationControllerDelegate
@@ -74,5 +66,7 @@
         }
     }
 }
+
+
 
 @end
