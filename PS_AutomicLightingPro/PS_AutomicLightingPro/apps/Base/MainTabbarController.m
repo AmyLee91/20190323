@@ -12,29 +12,70 @@
 #import "Global_header.h"
 #import "PS_TabBar.h"
 #import "UITabBar+CustomBadge.h"
-
+#import "PS_HomePageViewController.h"
+#import <objc/Runtime.h>
 @interface MainTabbarController ()<UITabBarControllerDelegate>{
 
-    UIPanGestureRecognizer *panGestureRecognizer;
+    
     
     NSMutableArray *Vcs;
     NSMutableArray *items;
 }
-
+@property(nonatomic,strong)UIPanGestureRecognizer *panGestureRecognizer;
 @end
 
 @implementation MainTabbarController
 
+#pragma mark --解决iOS12以后tabbar图标位移问题
+
+CG_INLINE BOOL
+OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementationBlock)(Class originClass, SEL originCMD, IMP originIMP)) {
+    Method originMethod = class_getInstanceMethod(targetClass, targetSelector);
+    if (!originMethod) {
+        return NO;
+    }
+    IMP originIMP = method_getImplementation(originMethod);
+    method_setImplementation(originMethod, imp_implementationWithBlock(implementationBlock(targetClass, targetSelector, originIMP)));
+    return YES;
+}
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (@available(iOS 12.1, *)) {
+            OverrideImplementation(NSClassFromString(@"UITabBarButton"), @selector(setFrame:), ^id(__unsafe_unretained Class originClass, SEL originCMD, IMP originIMP) {
+                return ^(UIView *selfObject, CGRect firstArgv) {
+
+                    if ([selfObject isKindOfClass:originClass]) {
+                        // 如果发现即将要设置一个 size 为空的 frame，则屏蔽掉本次设置
+                        if (!CGRectIsEmpty(selfObject.frame) && CGRectIsEmpty(firstArgv)) {
+                            return;
+                        }
+                    }
+
+                    // call super
+                    void (*originSelectorIMP)(id, SEL, CGRect);
+                    originSelectorIMP = (void (*)(id, SEL, CGRect))originIMP;
+                    originSelectorIMP(selfObject, originCMD, firstArgv);
+                };
+            });
+        }
+    });
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
-
+   
     [self initAll];
+    // tabbar 菜单 手势滑动
+//    [self.view addGestureRecognizer:self.panGestureRecognizer];
 }
 #pragma mark ---- 初始化Tabbar -----
 -(void)setUpTabBar{
     //设置背景色 分割线
     [self setValue:[PS_TabBar new] forKey:@"tabBar"];//替换类型
+   
     [self.tabBar setBackgroundColor:KWhiteColor];
     [self.tabBar setBackgroundImage:[UIImage new]];
     [self.tabBar setShadowImage:[UIImage imageWithColor:CLineColor size:CGSizeMake(Screen_width, 1)]];
@@ -42,13 +83,12 @@
     [self.tabBar setTabIconWidth:29];
     [self.tabBar setBadgeTop:9];
     
+    
 }
+
 #pragma mark ---- 初始化 ------
 -(void)initAll{
     [self setUpTabBar];
-    
-    panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognizerAction:)];
-    [self.view addGestureRecognizer:panGestureRecognizer];
     
     Vcs = [[NSMutableArray alloc]initWithCapacity:1];
     items = [[NSMutableArray alloc]initWithCapacity:1];
@@ -56,11 +96,19 @@
                      @{@"title":@"New",@"image":@"icon_tabbar_device"},
                      @{@"title":@"Mine",@"image":@"icon_tabbar_mine"}];
     for (int i =0; i<arr.count; i++) {
-
         NSDictionary *dit = arr[i];
+        if (i == 0) {
+            PS_HomePageViewController * vc =[[PS_HomePageViewController alloc]init];
+            vc.view.backgroundColor = KWhiteColor;
+            [self setUpChildViewController:vc tabTitle:dit[@"title"] navTitle:dit[@"title"] imageName:dit[@"image"]];
+                                    
+        }else{
+       
         BaseViewController *vc =[[BaseViewController alloc]init];
         vc.view.backgroundColor = KWhiteColor;
-        [self setUpChildViewController:vc tabTitle:dit[@"title"] navTitle:dit[@"title"] imageName:dit[@"image"]];
+            [self setUpChildViewController:vc tabTitle:dit[@"title"] navTitle:dit[@"title"] imageName:dit[@"image"]];
+            
+        }
     }
     
     self.viewControllers = Vcs;
@@ -83,7 +131,14 @@
      [Vcs addObject:nav];
     
 }
-
+#pragma mark -- 手势滑动底部 tabbar 菜单
+-(UIPanGestureRecognizer *)panGestureRecognizer{
+    if (!_panGestureRecognizer) {
+        _panGestureRecognizer =[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognizerAction:)];
+        
+    }
+    return _panGestureRecognizer;
+}
 //手势-方法
 -(void)panGestureRecognizerAction:(UIPanGestureRecognizer *)pan{
     //如果没有动画控制器，则不执行动画，动画控制器用来显示切换动画
@@ -116,21 +171,21 @@
     
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-     NSLog(@"tabBarController:shouldSelectViewController");
+//     NSLog(@"tabBarController:shouldSelectViewController");
     return YES;
 }
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
-    NSLog(@"tabBarController:didSelectViewController");
+//    NSLog(@"tabBarController:didSelectViewController");
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController willBeginCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers {
-    NSLog(@"tabBarController:willBeginCustomizingViewControllers");
+//    NSLog(@"tabBarController:willBeginCustomizingViewControllers");
 }
 - (void)tabBarController:(UITabBarController *)tabBarController willEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers changed:(BOOL)changed {
-    NSLog(@"tabBarController:willEndCustomizingViewControllers:%i",changed);
+//    NSLog(@"tabBarController:willEndCustomizingViewControllers:%i",changed);
 }
 - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers changed:(BOOL)changed {
-    NSLog(@"tabBarController:didEndCustomizingViewControllers:%i",changed);
+//    NSLog(@"tabBarController:didEndCustomizingViewControllers:%i",changed);
 }
 
 

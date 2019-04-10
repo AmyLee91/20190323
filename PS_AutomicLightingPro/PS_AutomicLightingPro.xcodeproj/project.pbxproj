@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9409B3225C7B4F00392A56 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C9409B2225C7B4F00392A56 /* 3.jpg */; };
+		2C9409B7225C816200392A56 /* CanMoveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9409B6225C816200392A56 /* CanMoveImage.m */; };
+		2C9409BA225C85DE00392A56 /* ToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9409B9225C85DE00392A56 /* ToolBar.m */; };
 		2C94A95322545AFC0049EE63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95222545AFC0049EE63 /* AppDelegate.m */; };
 		2C94A95622545AFC0049EE63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95522545AFC0049EE63 /* ViewController.m */; };
 		2C94A95C22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A95A22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld */; };
@@ -39,6 +42,15 @@
 		2C94A9D32254AEC90049EE63 /* icon_tabbar_mine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9C72254AEC90049EE63 /* icon_tabbar_mine@3x.png */; };
 		2C94A9D82254B3630049EE63 /* PS_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9D52254B3630049EE63 /* PS_TabBar.m */; };
 		2C94A9D92254B3630049EE63 /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9D72254B3630049EE63 /* UITabBar+CustomBadge.m */; };
+		2C94A9DC2255E5050049EE63 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9DB2255E5050049EE63 /* UIView+YYAdd.m */; };
+		2C94A9E02255EA490049EE63 /* icon_back_nav@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9DE2255EA490049EE63 /* icon_back_nav@3x.png */; };
+		2C94A9E12255EA490049EE63 /* icon_back_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C94A9DF2255EA490049EE63 /* icon_back_nav@2x.png */; };
+		2C94A9E42255F8260049EE63 /* NSArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C94A9E32255F8260049EE63 /* NSArray+safe.m */; };
+		2C94A9E7225609590049EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9E6225609590049EE63 /* Foundation.framework */; };
+		2C94A9E9225609620049EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9E8225609620049EE63 /* UIKit.framework */; };
+		2C94A9EB225609780049EE63 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EA225609780049EE63 /* libc++.tbd */; };
+		2C94A9ED225609840049EE63 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EC225609840049EE63 /* libz.tbd */; };
+		2C94A9EF225609A20049EE63 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EE225609A20049EE63 /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +71,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9409B2225C7B4F00392A56 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		2C9409B5225C816200392A56 /* CanMoveImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanMoveImage.h; sourceTree = "<group>"; };
+		2C9409B6225C816200392A56 /* CanMoveImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanMoveImage.m; sourceTree = "<group>"; };
+		2C9409B8225C85DE00392A56 /* ToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolBar.h; sourceTree = "<group>"; };
+		2C9409B9225C85DE00392A56 /* ToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolBar.m; sourceTree = "<group>"; };
 		2C94A94E22545AFC0049EE63 /* PS_AutomicLightingPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PS_AutomicLightingPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C94A95122545AFC0049EE63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C94A95222545AFC0049EE63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +131,17 @@
 		2C94A9D52254B3630049EE63 /* PS_TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PS_TabBar.m; sourceTree = "<group>"; };
 		2C94A9D62254B3630049EE63 /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
 		2C94A9D72254B3630049EE63 /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
+		2C94A9DA2255E5050049EE63 /* UIView+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		2C94A9DB2255E5050049EE63 /* UIView+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		2C94A9DE2255EA490049EE63 /* icon_back_nav@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back_nav@3x.png"; sourceTree = "<group>"; };
+		2C94A9DF2255EA490049EE63 /* icon_back_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back_nav@2x.png"; sourceTree = "<group>"; };
+		2C94A9E22255F8260049EE63 /* NSArray+safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+safe.h"; sourceTree = "<group>"; };
+		2C94A9E32255F8260049EE63 /* NSArray+safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+safe.m"; sourceTree = "<group>"; };
+		2C94A9E6225609590049EE63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C94A9E8225609620049EE63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C94A9EA225609780049EE63 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2C94A9EC225609840049EE63 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2C94A9EE225609A20049EE63 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +149,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C94A9EF225609A20049EE63 /* libicucore.tbd in Frameworks */,
+				2C94A9ED225609840049EE63 /* libz.tbd in Frameworks */,
+				2C94A9EB225609780049EE63 /* libc++.tbd in Frameworks */,
+				2C94A9E9225609620049EE63 /* UIKit.framework in Frameworks */,
+				2C94A9E7225609590049EE63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +174,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9409B4225C812100392A56 /* imgEdit */ = {
+			isa = PBXGroup;
+			children = (
+				2C9409B5225C816200392A56 /* CanMoveImage.h */,
+				2C9409B6225C816200392A56 /* CanMoveImage.m */,
+				2C9409B8225C85DE00392A56 /* ToolBar.h */,
+				2C9409B9225C85DE00392A56 /* ToolBar.m */,
+			);
+			path = imgEdit;
+			sourceTree = "<group>";
+		};
 		2C94A94522545AFC0049EE63 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +192,7 @@
 				2C94A96C22545AFF0049EE63 /* PS_AutomicLightingProTests */,
 				2C94A97722545AFF0049EE63 /* PS_AutomicLightingProUITests */,
 				2C94A94F22545AFC0049EE63 /* Products */,
+				2C94A9E5225609590049EE63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +253,7 @@
 		2C94A98722545B440049EE63 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2C9409B4225C812100392A56 /* imgEdit */,
 				2C94A9B62254A1070049EE63 /* category */,
 				2C94A9AF225494650049EE63 /* UtilityMacro.h */,
 				2C94A9AB22548EE40049EE63 /* FontAndColorMacroHeader.h */,
@@ -254,6 +300,7 @@
 		2C94A98C22545C050049EE63 /* homeVtcs */ = {
 			isa = PBXGroup;
 			children = (
+				2C9409B2225C7B4F00392A56 /* 3.jpg */,
 				2C94A9B322549C5D0049EE63 /* PS_HomePageViewController.h */,
 				2C94A9B422549C5D0049EE63 /* PS_HomePageViewController.m */,
 			);
@@ -315,6 +362,10 @@
 				2C94A9B72254A49A0049EE63 /* UIImage+WQ.m */,
 				2C94A9A822548E070049EE63 /* UIColor+Kits.h */,
 				2C94A9A922548E070049EE63 /* UIColor+Kits.m */,
+				2C94A9DA2255E5050049EE63 /* UIView+YYAdd.h */,
+				2C94A9DB2255E5050049EE63 /* UIView+YYAdd.m */,
+				2C94A9E22255F8260049EE63 /* NSArray+safe.h */,
+				2C94A9E32255F8260049EE63 /* NSArray+safe.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -322,6 +373,7 @@
 		2C94A9BA2254AC300049EE63 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				2C94A9DD2255EA490049EE63 /* common */,
 				2C94A9BB2254AEA40049EE63 /* tabBars */,
 			);
 			path = Res;
@@ -344,6 +396,27 @@
 				2C94A9C72254AEC90049EE63 /* icon_tabbar_mine@3x.png */,
 			);
 			path = tabBars;
+			sourceTree = "<group>";
+		};
+		2C94A9DD2255EA490049EE63 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9DE2255EA490049EE63 /* icon_back_nav@3x.png */,
+				2C94A9DF2255EA490049EE63 /* icon_back_nav@2x.png */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		2C94A9E5225609590049EE63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C94A9EE225609A20049EE63 /* libicucore.tbd */,
+				2C94A9EC225609840049EE63 /* libz.tbd */,
+				2C94A9EA225609780049EE63 /* libc++.tbd */,
+				2C94A9E8225609620049EE63 /* UIKit.framework */,
+				2C94A9E6225609590049EE63 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,13 +528,16 @@
 				2C94A9D02254AEC90049EE63 /* icon_tabbar_homepage@3x.png in Resources */,
 				2C94A9CD2254AEC90049EE63 /* icon_tabbar_homepage_selected@3x.png in Resources */,
 				2C94A9D22254AEC90049EE63 /* icon_tabbar_mine@2x.png in Resources */,
+				2C9409B3225C7B4F00392A56 /* 3.jpg in Resources */,
 				2C94A9CE2254AEC90049EE63 /* icon_tabbar_device@2x.png in Resources */,
 				2C94A9CF2254AEC90049EE63 /* icon_tabbar_homepage@2x.png in Resources */,
 				2C94A95E22545AFE0049EE63 /* Assets.xcassets in Resources */,
 				2C94A9D32254AEC90049EE63 /* icon_tabbar_mine@3x.png in Resources */,
 				2C94A9C92254AEC90049EE63 /* icon_tabbar_device_selected@3x.png in Resources */,
 				2C94A9CB2254AEC90049EE63 /* icon_tabbar_mine_selected@3x.png in Resources */,
+				2C94A9E02255EA490049EE63 /* icon_back_nav@3x.png in Resources */,
 				2C94A9D12254AEC90049EE63 /* icon_tabbar_mine_selected@2x.png in Resources */,
+				2C94A9E12255EA490049EE63 /* icon_back_nav@2x.png in Resources */,
 				2C94A9CA2254AEC90049EE63 /* icon_tabbar_device@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,13 +566,17 @@
 				2C94A95C22545AFC0049EE63 /* PS_AutomicLightingPro.xcdatamodeld in Sources */,
 				2C94A99222545CAF0049EE63 /* BaseViewController.m in Sources */,
 				2C94A95622545AFC0049EE63 /* ViewController.m in Sources */,
+				2C9409BA225C85DE00392A56 /* ToolBar.m in Sources */,
 				2C94A9B2225498570049EE63 /* BaseWKWebview.m in Sources */,
 				2C94A9D92254B3630049EE63 /* UITabBar+CustomBadge.m in Sources */,
 				2C94A96422545AFE0049EE63 /* main.m in Sources */,
+				2C9409B7225C816200392A56 /* CanMoveImage.m in Sources */,
 				2C94A99B22545D210049EE63 /* BaseNavigationController.m in Sources */,
+				2C94A9E42255F8260049EE63 /* NSArray+safe.m in Sources */,
 				2C94A95322545AFC0049EE63 /* AppDelegate.m in Sources */,
 				2C94A9AA22548E070049EE63 /* UIColor+Kits.m in Sources */,
 				2C94A99822545CE20049EE63 /* BaseTableViewCell.m in Sources */,
+				2C94A9DC2255E5050049EE63 /* UIView+YYAdd.m in Sources */,
 				2C94A9A122545D710049EE63 /* BaseWebViewController.m in Sources */,
 				2C94A9A422545E340049EE63 /* MainTabbarController.m in Sources */,
 				2C94A99522545CC90049EE63 /* BaseView.m in Sources */,
@@ -584,7 +664,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -644,7 +724,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
