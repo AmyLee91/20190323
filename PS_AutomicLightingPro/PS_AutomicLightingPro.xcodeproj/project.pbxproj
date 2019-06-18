@@ -114,6 +114,8 @@
 		2C94A9EB225609780049EE63 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EA225609780049EE63 /* libc++.tbd */; };
 		2C94A9ED225609840049EE63 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EC225609840049EE63 /* libz.tbd */; };
 		2C94A9EF225609A20049EE63 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94A9EE225609A20049EE63 /* libicucore.tbd */; };
+		2CF2990A22783CD50025FCA6 /* UIViewController+FindLeaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2990922783CD50025FCA6 /* UIViewController+FindLeaks.m */; };
+		2CF2990D2278429A0025FCA6 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2990C2278429A0025FCA6 /* NSObject+Swizzle.m */; };
 		8F313020C25837A9A9A91002 /* libPods-PS_AutomicLightingPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13EF51BA3C11943CDF6698 /* libPods-PS_AutomicLightingPro.a */; };
 /* End PBXBuildFile section */
 
@@ -320,6 +322,10 @@
 		2C94A9EA225609780049EE63 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2C94A9EC225609840049EE63 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2C94A9EE225609A20049EE63 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		2CF2990822783CD50025FCA6 /* UIViewController+FindLeaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FindLeaks.h"; sourceTree = "<group>"; };
+		2CF2990922783CD50025FCA6 /* UIViewController+FindLeaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FindLeaks.m"; sourceTree = "<group>"; };
+		2CF2990B227842990025FCA6 /* NSObject+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
+		2CF2990C2278429A0025FCA6 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		3E13EF51BA3C11943CDF6698 /* libPods-PS_AutomicLightingPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PS_AutomicLightingPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8C098BC008E5496C298F85 /* Pods-PS_AutomicLightingPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS_AutomicLightingPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PS_AutomicLightingPro/Pods-PS_AutomicLightingPro.release.xcconfig"; sourceTree = "<group>"; };
 		EE40A7731F497B13036D1E09 /* Pods-PS_AutomicLightingPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS_AutomicLightingPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PS_AutomicLightingPro/Pods-PS_AutomicLightingPro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -414,23 +420,27 @@
 		2C940BA3225DF8D500392A56 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				2C940BA4225DF8D500392A56 /* UIImage+WQ.m */,
-				2C940BA5225DF8D500392A56 /* NSUserDefaults+MJSaveCustomObject.h */,
 				2C940BA6225DF8D500392A56 /* WQCategory */,
-				2C940BB0225DF8D500392A56 /* UIColor+Kits.m */,
-				2C940BB1225DF8D500392A56 /* UIButton+ImageTitleStyle.h */,
-				2C940BB2225DF8D500392A56 /* NSDate+convenience.h */,
-				2C940BB3225DF8D500392A56 /* UIView+YYAdd.m */,
-				2C940BB4225DF8D500392A56 /* NSArray+safe.h */,
 				2C940BB5225DF8D500392A56 /* NSString+Size.h */,
-				2C940BB6225DF8D500392A56 /* UIImage+WQ.h */,
-				2C940BB7225DF8D500392A56 /* NSUserDefaults+MJSaveCustomObject.m */,
-				2C940BB8225DF8D500392A56 /* UIButton+ImageTitleStyle.m */,
-				2C940BB9225DF8D500392A56 /* UIColor+Kits.h */,
 				2C940BBA225DF8D500392A56 /* NSString+Size.m */,
+				2C940BB6225DF8D500392A56 /* UIImage+WQ.h */,
+				2C940BA4225DF8D500392A56 /* UIImage+WQ.m */,
+				2C940BB9225DF8D500392A56 /* UIColor+Kits.h */,
+				2C940BB0225DF8D500392A56 /* UIColor+Kits.m */,
+				2C940BB4225DF8D500392A56 /* NSArray+safe.h */,
 				2C940BBB225DF8D500392A56 /* NSArray+safe.m */,
 				2C940BBC225DF8D500392A56 /* UIView+YYAdd.h */,
+				2C940BB3225DF8D500392A56 /* UIView+YYAdd.m */,
+				2C940BB2225DF8D500392A56 /* NSDate+convenience.h */,
 				2C940BBD225DF8D500392A56 /* NSDate+convenience.m */,
+				2C940BB1225DF8D500392A56 /* UIButton+ImageTitleStyle.h */,
+				2C940BB8225DF8D500392A56 /* UIButton+ImageTitleStyle.m */,
+				2C940BA5225DF8D500392A56 /* NSUserDefaults+MJSaveCustomObject.h */,
+				2C940BB7225DF8D500392A56 /* NSUserDefaults+MJSaveCustomObject.m */,
+				2CF2990822783CD50025FCA6 /* UIViewController+FindLeaks.h */,
+				2CF2990922783CD50025FCA6 /* UIViewController+FindLeaks.m */,
+				2CF2990B227842990025FCA6 /* NSObject+Swizzle.h */,
+				2CF2990C2278429A0025FCA6 /* NSObject+Swizzle.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -1057,6 +1067,7 @@
 				2C9409BA225C85DE00392A56 /* ToolBar.m in Sources */,
 				2C940BEA225DF8D600392A56 /* NSArray+safe.m in Sources */,
 				2C940C4B225DF8FC00392A56 /* ZLSelectPhotoModel.m in Sources */,
+				2CF2990D2278429A0025FCA6 /* NSObject+Swizzle.m in Sources */,
 				2C940C52225DF8FC00392A56 /* ZLThumbnailViewController.m in Sources */,
 				2C940BF2225DF8D600392A56 /* UIViewAdditions.m in Sources */,
 				2C940BE6225DF8D600392A56 /* UIView+YYAdd.m in Sources */,
@@ -1091,6 +1102,7 @@
 				2C940CA5225DF93A00392A56 /* BaseView.m in Sources */,
 				2C940BDB225DF8D600392A56 /* RSA.m in Sources */,
 				2C940C33225DF8FC00392A56 /* SDBrowserImageView.m in Sources */,
+				2CF2990A22783CD50025FCA6 /* UIViewController+FindLeaks.m in Sources */,
 				2C940C4D225DF8FC00392A56 /* ZLPhotoTool.m in Sources */,
 				2C940BF1225DF8D600392A56 /* TouchTableView.m in Sources */,
 				2C940CA8225DF93A00392A56 /* BaseNavigationController.m in Sources */,

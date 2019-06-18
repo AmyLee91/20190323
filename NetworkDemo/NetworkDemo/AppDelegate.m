@@ -20,7 +20,7 @@
     
     //    [self get1];
     //    [self get2];
-        [self post];
+//        [self post];
     return YES;
 }
 //发送GET请求

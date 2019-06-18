@@ -29,17 +29,12 @@
     img.userInteractionEnabled = YES;
     [self.view addSubview:img];
     
-    
-    
     {
         icon = [[UIImageView alloc]initWithFrame:CGRectMake(50,50 , 50, 50)];
         [img addSubview:icon];
         icon.userInteractionEnabled = YES;
         icon.backgroundColor = [UIColor redColor];
-      
-
     }
-    
 }
 -(void)test{
 ////    测试

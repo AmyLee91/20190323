@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NewViewController.h"
 
 @interface ViewController ()<NSURLSessionDataDelegate>
 @property (nonatomic, strong) NSMutableData *responseData;
@@ -27,7 +28,11 @@
 //当点击控制器View的时候会调用该方法
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self delegateTest];
+    NewViewController *newVc = [[NewViewController alloc]init];
+    [self.navigationController pushViewController:newVc animated:YES];
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:newVc];
+//    [self presentViewController:nav animated:YES completion:nil];
+    //    [self delegateTest];
 }
 
 //发送请求，代理方法

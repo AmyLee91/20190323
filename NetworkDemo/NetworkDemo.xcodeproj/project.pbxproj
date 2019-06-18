@@ -16,6 +16,7 @@
 		2C6A7DF8224B1EA300989E3A /* NetworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7DF7224B1EA300989E3A /* NetworkDemoTests.m */; };
 		2C6A7E03224B1EA300989E3A /* NetworkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A7E02224B1EA300989E3A /* NetworkDemoUITests.m */; };
 		2C6A7E11224B1F0A00989E3A /* iOS之网络篇 in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A7E10224B1F0A00989E3A /* iOS之网络篇 */; };
+		2CDED65222B8848000980580 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDED65122B8848000980580 /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2C6A7E02224B1EA300989E3A /* NetworkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkDemoUITests.m; sourceTree = "<group>"; };
 		2C6A7E04224B1EA300989E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C6A7E10224B1F0A00989E3A /* iOS之网络篇 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "iOS之网络篇"; sourceTree = "<group>"; };
+		2CDED65022B8848000980580 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		2CDED65122B8848000980580 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				2C6A7DE9224B1EA300989E3A /* LaunchScreen.storyboard */,
 				2C6A7DEC224B1EA300989E3A /* Info.plist */,
 				2C6A7DED224B1EA300989E3A /* main.m */,
+				2CDED65022B8848000980580 /* NewViewController.h */,
+				2CDED65122B8848000980580 /* NewViewController.m */,
 			);
 			path = NetworkDemo;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				2C6A7DE3224B1E9F00989E3A /* ViewController.m in Sources */,
 				2C6A7DEE224B1EA300989E3A /* main.m in Sources */,
 				2C6A7DE0224B1E9F00989E3A /* AppDelegate.m in Sources */,
+				2CDED65222B8848000980580 /* NewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

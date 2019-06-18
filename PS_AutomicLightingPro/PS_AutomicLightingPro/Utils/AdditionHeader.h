@@ -30,5 +30,9 @@
 #import "category/WQCategory/UITableViewCell+WQ.h"
 #import "category/WQCategory/MBProgressHUD+WQ.h"
 
+
+#import "category/NSObject+Swizzle.h"
+#import "category/UIViewController+FindLeaks.h"
+
 #endif
 
